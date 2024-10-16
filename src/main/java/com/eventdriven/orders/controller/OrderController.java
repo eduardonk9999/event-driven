@@ -17,10 +17,6 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @PostMapping
-    public ResponseEntity<CustomerOrdeer> createOrder(CustomerOrdeer order) {
-        CustomerOrdeer newOrder = orderService.createOrder(order);
-        return ResponseEntity.ok(newOrder);
-    }
+
 
 }

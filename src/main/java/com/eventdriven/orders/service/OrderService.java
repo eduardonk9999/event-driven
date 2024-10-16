@@ -10,12 +10,6 @@ import java.util.Date;
 @Service
 public class OrderService {
 
-    @Autowired
-    private OrderRepository repository;
 
-    public CustomerOrdeer createOrder(CustomerOrdeer order) {
-        order.setOrderDate(new Date());
-        return repository.save(order);  // Persistir o pedido no banco de dados
-    }
 
 }
